@@ -1,3 +1,3 @@
 # Curso de Java básico da DIO
 
-Repositório do curso de Java básico
+Há 2 Desafios resolvidos e arquivados: Sintaxe e Controle de Fluxo.
