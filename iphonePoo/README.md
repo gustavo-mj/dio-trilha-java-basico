@@ -1,18 +1,43 @@
-## Getting Started
+## POO - Desafio
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Modelagem e Diagramação de um Componente iPhone
 
-## Folder Structure
+[Lançamento iPhone 2007](https://www.youtube.com/watch?v=9ou608QQRq8)
+- Minutos relevantes: 00:15 até 00:55
 
-The workspace contains two folders by default, where:
+#### Funcionalidades Modeladas
+1. **Reprodutor Musical**
+   - Métodos: `tocar()`, `pausar()`, `selecionarMusica(String musica)`
+2. **Aparelho Telefônico**
+   - Métodos: `ligar(String numero)`, `atender()`, `iniciarCorreioVoz()`
+3. **Navegador na Internet**
+   - Métodos: `exibirPagina(String url)`, `adicionarNovaAba()`, `atualizarPagina()`
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Exemplo de Diagrama UML (Mermaid)
+```mermaid
+classDiagram
+    class ReprodutorMusical {
+        +tocar()
+        +pausar()
+        +selecionarMusica(String musica)
+    }
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+    class AparelhoTelefonico {
+        +ligar(String numero)
+        +atender()
+        +iniciarCorreioVoz()
+    }
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+    class NavegadorInternet {
+        +exibirPagina(String url)
+        +adicionarNovaAba()
+        +atualizarPagina()
+    }
 
-## Dependency Management
+    class iPhone {
+    }
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+    iPhone --> ReprodutorMusical
+    iPhone --> AparelhoTelefonico
+    iPhone --> NavegadorInternet
+```
