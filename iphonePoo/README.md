@@ -13,7 +13,7 @@
 3. **Navegador na Internet**
    - Métodos: `exibirPagina(String url)`, `adicionarNovaAba()`, `atualizarPagina()`
 
-### Exemplo de Diagrama UML (Mermaid)
+### Diagrama UML (Mermaid)
 ```mermaid
 classDiagram
     class ReprodutorMusical {
