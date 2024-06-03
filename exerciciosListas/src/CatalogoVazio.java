@@ -1,0 +1,1 @@
+public class CatalogoVazio extends Exception {}
